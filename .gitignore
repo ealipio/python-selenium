@@ -1,4 +1,9 @@
 Include
 Lib
 Scripts
+drivers
+selenium
+
 **/*.cfg
+**/*.log
+**/*.json
