@@ -3,13 +3,15 @@ from selenium import webdriver
 
 
 class GoogleTestCase(unittest.TestCase):
+    chrome_path = 'C:\eisson\python\myenv\drivers\chromedriver.exe'
+    url = 'http://www.google.com'
 
     def setUp(self):
-        self.browser = webdriver.Chrome("./drivers/chromedriver.exe")
+        self.browser = webdriver.Chrome(self.chrome_path)
         self.addCleanup(self.browser.quit)
 
     def testPageTitle(self):
-        self.browser.get('http://www.google.com')
+        self.browser.get(self.url)
         self.assertIn('Google', self.browser.title)
 
 

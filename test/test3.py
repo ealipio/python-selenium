@@ -6,15 +6,23 @@ from selenium.webdriver.common.keys import Keys
 Using facebook 
 '''
 
-user = "YOUR_EMAIL_DUH!"
-pwd = "YOUR_PASSWORD"
+user = 'YOUR_EMAIL_DUH!'
+pwd = 'YOUR_PASSWORD'
+url = 'http://www.facebook.com'
+wait_time = 5
+chrome_path = 'C:\eisson\python\myenv\drivers\chromedriver.exe'
+gecko_path = 'C:\eisson\python\myenv\drivers\geckodriver.exe'
+ie_path = 'C:\eisson\python\myenv\drivers\MicrosoftWebDriver.exe'
 
-browser = webdriver.Chrome("./drivers/chromedriver.exe")
-browser.get("http://www.facebook.com")
+driver_path = chrome_path
 
-elem = browser.find_element_by_id("email")
+browser = webdriver.Chrome(driver_path)
+browser.get(url)
+
+elem = browser.find_element_by_id('email')
 elem.send_keys(user)
-elem = browser.find_element_by_id("pass")
+elem = browser.find_element_by_id('pass')
 elem.send_keys(pwd)
 elem.send_keys(Keys.RETURN)
-# browser.close()
+time.sleep(wait_time)
+browser.close()
