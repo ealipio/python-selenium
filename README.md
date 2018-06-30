@@ -21,5 +21,8 @@ $ deactivate
 you can follow all my steps here in this brief tutorial:
 https://docs.google.com/document/d/1EsxyNoMs1Wk8gYylF8X_ccewTVg9BUBNrYLmS9GB3h0/edit?usp=sharing
 
+to install the libraries that I'm using:
+$ pip install -r requirements.txt
+
 
 That's it. Happy Coding :)
