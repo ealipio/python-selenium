@@ -1,0 +1,27 @@
+1. Completar los ejercicios de Webdriver,
+2. Aplicar Page Object
+    1. (Opcional) Cómo experiencia enriquecedora, 
+    pueden aplicar alguna libreria de PO. 
+    Para eso van a tener que leer de que se trata la libreria y que les resuelve.
+    Es muy buena opcion por que le da mucha claridad al código entre otras cosas.
+	PO: 
+        page-object: https://page-objects.readthedocs.io/en/latest/index.html
+        Webium: http://wgnet.github.io/webium/
+        PYPOM: http://pypom.readthedocs.io/en/latest/index.html
+3. Assertions: Utilizar algún framework o librería de pruebas
+    1. unnitest que viene con python. Hay que importar la librería nada mas. 
+    En los ejemplos que les mostré utilizo esta librería. 
+    Esta librería no tiene SOFTASSERTIONS por lo que van a tener que 
+    buscar alguna otra que si lo tenga como por ejemplo:
+        1. Pytest: https://docs.pytest.org/en/latest/
+        2. AssertPy: https://github.com/ActivisionGameScience/assertpy
+4. Utilizar alguna libreria de mockeo de datos como por ejemplo 
+		https://github.com/joke2k/faker
+
+	o si están creativos, algún mecanismo propio para generar datos de prueba
+     aleatoriamente como:
+		Nombres
+	
+	El propósito de esto es poder crear nombres aleatorios de projectos, 
+    memorizamos ese nombre y luego crear el proyecto, 
+    buscamos de la lista de proyectos el nombre generado. 
