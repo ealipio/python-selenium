@@ -1,17 +1,16 @@
 import unittest
 from selenium import webdriver
+from config import *
 
 
 class GoogleTestCase(unittest.TestCase):
-    chrome_path = 'C:\eisson\python\myenv\drivers\chromedriver.exe'
-    url = 'http://www.google.com'
 
     def setUp(self):
-        self.browser = webdriver.Chrome(self.chrome_path)
+        self.browser = webdriver.Chrome(CHROME_PATH)
         self.addCleanup(self.browser.quit)
 
     def testPageTitle(self):
-        self.browser.get(self.url)
+        self.browser.get(URL)
         self.assertIn('Google', self.browser.title)
 
 
