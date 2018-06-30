@@ -4,5 +4,6 @@ Scripts
 drivers
 selenium
 
+**/__pycache__
 **/*.log
 **/*.json
